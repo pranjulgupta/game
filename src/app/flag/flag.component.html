@@ -1,0 +1,14 @@
+<h1 class="text" style="color:cyan ;background-image: url(https://i.ytimg.com/vi/S99I6_ffuS8/hqdefault.jpg)">Welcome to the Flag and Country Game</h1>
+
+<span style="width:10em; line-height: 10em " class="flag-icon flag-icon-{{newcountrycode | lowercase}}">{{newcountryname}}</span><br>
+<button type="submit" class="btn btn-primary" (click)="next()">Let's Start</button><br>
+
+   <ul>
+     <li  *ngFor="let countryarray of countryarr; let i=index; " (click)="check(i)" > {{countryarray.name}}
+     </li>
+   
+    </ul>  
+<h1>correct={{count}}</h1>
+
+
+<!-- [ngClass]="{'right'}" -->
